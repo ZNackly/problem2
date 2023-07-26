@@ -8,12 +8,13 @@ class Bird:
 
 
 class Parrot(Bird):
-    def __init__(self, color):
-        Bird.__init__(self, name, size)
+    def __init__(self, name, size, color):
+        super().__init__(name, size)
         self.color = color
 
 class Penguin(Bird):
-    def __init__(self, genus):
+    def __init__(self, name, size, genus):
+        super().__init__(name, size)
         self.genus = genus
 kesha = Parrot('Ара', 'средний', 'красный')
 kowalski = Penguin('Королевский', 'большой', 'Aptenodytes')
