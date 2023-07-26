@@ -1,0 +1,19 @@
+class Bird:
+    def __init__(self, name, size):
+        self.name = name
+        self.size = size
+
+    def describe(self):
+        return f'Размер птицы {self.name} — {self.size}.'
+
+
+class Parrot(Bird):
+    def __init__(self, color):
+        Bird.__init__(self, name, size)
+        self.color = color
+
+class Penguin(Bird):
+    def __init__(self, genus):
+        self.genus = genus
+kesha = Parrot('Ара', 'средний', 'красный')
+kowalski = Penguin('Королевский', 'большой', 'Aptenodytes')
